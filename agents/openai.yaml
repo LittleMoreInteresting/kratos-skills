@@ -1,0 +1,4 @@
+version: 1
+display_name: Go Kratos Skills
+short_description: Build and troubleshoot go-kratos services with command-driven examples, proto-first workflows, and layered architecture.
+default_prompt: Help me implement this feature in go-kratos with concrete kratos/make commands, transport-biz-data layering, and wire DI.

@@ -1,0 +1,91 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+coverage.html
+coverage.txt
+
+# Dependency directories
+vendor/
+
+# Go workspace file
+go.work
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build output
+bin/
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Proto generated files (if not committed)
+# *.pb.go
+# *_grpc.pb.go
+# *_http.pb.go
+
+# Wire generated files (should be committed)
+# wire_gen.go
+
+# Config files with secrets
+configs/config_local.yaml
+configs/config_private.yaml
+
+# Database files
+*.db
+*.sqlite
+
+# Redis dump
+*.rdb
+
+# Docker volumes
+data/
+volumes/
+
+# Kubernetes secrets
+k8s/*-secret.yaml
+!k8s/*-secret.yaml.example
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Certificates
+*.pem
+*.key
+*.crt
+!*.example.pem
+!*.example.key
+!*.example.crt
