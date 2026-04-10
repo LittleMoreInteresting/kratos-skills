@@ -50,7 +50,7 @@ This skill organizes go-kratos knowledge into focused modules. **Load specific g
 ### Pattern Guides (Detailed Reference)
 
 #### 1. HTTP Transport Patterns
-**File**: [references/http-patterns.md](references/http-patterns.md)
+**File**: [references/http-api-patterns.md](references/http-api-patterns.md)
 **When to load**: Creating HTTP endpoints, implementing REST APIs, adding HTTP middleware
 **Contains**:
 - HTTP server setup and configuration
@@ -79,14 +79,13 @@ This skill organizes go-kratos knowledge into focused modules. **Load specific g
 - Data access layer patterns
 - Dependency injection with Wire
 
-#### 4. Database Patterns
-**File**: [references/database-patterns.md](references/database-patterns.md)
-**When to load**: Implementing data persistence, ORM integration
+#### 4. Database & Data Patterns
+**File**: [references/data-patterns.md](references/data-patterns.md)
+**When to load**: Implementing data persistence, ORM integration, transactions
 **Contains**:
-- GORM integration patterns
-- SQL operations with ent
-- Redis caching strategies
-- Transaction management
+- GORM and Ent ORM integration patterns
+- Transaction management (GORM, SQL, Ent, MongoDB)
+- Redis caching strategies (Cache-Aside, Write-Through)
 - Connection pooling and performance tuning
 
 #### 5. Middleware Patterns
@@ -99,7 +98,61 @@ This skill organizes go-kratos knowledge into focused modules. **Load specific g
 - Metrics and tracing middleware
 - Authentication/Authorization middleware
 
-#### 6. Kratos CLI Reference
+#### 6. Error Handling Patterns
+**File**: [references/error-patterns.md](references/error-patterns.md)
+**When to load**: Implementing error handling, defining error codes
+**Contains**:
+- Domain error definitions (proto and Go)
+- Error code mapping (HTTP/gRPC)
+- Error wrapping and unwrapping
+- Custom error encoders
+
+#### 7. Validation Patterns
+**File**: [references/validation-patterns.md](references/validation-patterns.md)
+**When to load**: Adding input validation, proto validation rules
+**Contains**:
+- protoc-gen-validate integration
+- Validation rules (numeric, string, enum, message)
+- Custom validation middleware
+- Validation error handling
+
+#### 8. Distributed Tracing & Metrics
+**File**: [references/tracing-patterns.md](references/tracing-patterns.md)
+**When to load**: Adding observability, OpenTelemetry integration
+**Contains**:
+- OpenTelemetry tracer setup
+- Custom span creation
+- Metrics with Prometheus
+- Distributed tracing across services
+
+#### 9. Service Registry & Discovery
+**File**: [references/registry-patterns.md](references/registry-patterns.md)
+**When to load**: Implementing service discovery, load balancing
+**Contains**:
+- etcd, Consul, Nacos integration
+- Service registration and discovery
+- Client-side load balancing
+- Health checks
+
+#### 10. Event-Driven Architecture
+**File**: [references/event-patterns.md](references/event-patterns.md)
+**When to load**: Implementing async messaging, event sourcing
+**Contains**:
+- Kafka integration
+- Event publishing and consumption
+- Outbox pattern
+- Domain events
+
+#### 11. CQRS Patterns
+**File**: [references/cqrs-patterns.md](references/cqrs-patterns.md)
+**When to load**: Separating read/write models, complex queries
+**Contains**:
+- Command and Query separation
+- Aggregate roots
+- Event projections
+- Read model optimization
+
+#### 12. Kratos CLI Reference
 **File**: [references/kratos-cli-commands.md](references/kratos-cli-commands.md)
 **When to load**: Generating code with kratos CLI, setting up new services
 **Contains**:
@@ -125,6 +178,23 @@ This skill organizes go-kratos knowledge into focused modules. **Load specific g
 **File**: [getting-started/claude-code-guide.md](getting-started/claude-code-guide.md)
 **When to load**: Setting up Claude Code for kratos-skills usage
 **Contains**: Installation, invocation methods, advanced features
+
+## Quick Reference
+
+| Pattern | File | Use Case |
+|---------|------|----------|
+| HTTP API | [http-api-patterns.md](references/http-api-patterns.md) | REST API development |
+| gRPC | [grpc-patterns.md](references/grpc-patterns.md) | RPC services |
+| Clean Architecture | [clean-architecture-patterns.md](references/clean-architecture-patterns.md) | Layer separation |
+| Data & ORM | [data-patterns.md](references/data-patterns.md) | Database operations |
+| Errors | [error-patterns.md](references/error-patterns.md) | Error handling |
+| Validation | [validation-patterns.md](references/validation-patterns.md) | Input validation |
+| Tracing | [tracing-patterns.md](references/tracing-patterns.md) | Observability |
+| Registry | [registry-patterns.md](references/registry-patterns.md) | Service discovery |
+| Events | [event-patterns.md](references/event-patterns.md) | Async messaging |
+| CQRS | [cqrs-patterns.md](references/cqrs-patterns.md) | Read/write separation |
+| Middleware | [middleware-patterns.md](references/middleware-patterns.md) | Cross-cutting concerns |
+| CLI | [kratos-cli-commands.md](references/kratos-cli-commands.md) | Code generation |
 
 ## 🚀 Common Workflows
 

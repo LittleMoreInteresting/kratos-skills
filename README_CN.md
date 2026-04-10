@@ -51,10 +51,16 @@ kratos-skills/
 │   ├── copilot-guide.md        # GitHub Copilot
 │   └── windsurf-guide.md       # Windsurf IDE
 ├── references/                 # 详细模式文档
-│   ├── http-patterns.md        # HTTP API 开发模式
+│   ├── http-api-patterns.md    # HTTP API 开发模式
 │   ├── grpc-patterns.md        # gRPC 服务模式
 │   ├── clean-architecture-patterns.md  # 整洁架构模式
-│   ├── database-patterns.md    # 数据库操作
+│   ├── data-patterns.md        # 数据层、ORM、事务、缓存
+│   ├── error-patterns.md       # 错误处理和错误码定义
+│   ├── validation-patterns.md  # 基于 proto 的输入验证
+│   ├── tracing-patterns.md     # OpenTelemetry 追踪和指标
+│   ├── registry-patterns.md    # 服务发现和注册
+│   ├── event-patterns.md       # 基于 Kafka 的事件驱动架构
+│   ├── cqrs-patterns.md        # CQRS 模式实现
 │   ├── middleware-patterns.md  # 中间件和拦截器
 │   └── kratos-cli-commands.md  # Kratos CLI 参考
 ├── best-practices/             # 生产环境建议

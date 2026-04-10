@@ -51,10 +51,16 @@ kratos-skills/
 │   ├── copilot-guide.md        # GitHub Copilot
 │   └── windsurf-guide.md       # Windsurf IDE
 ├── references/                 # Detailed pattern documentation
-│   ├── http-patterns.md        # HTTP API development patterns
+│   ├── http-api-patterns.md    # HTTP API development patterns
 │   ├── grpc-patterns.md        # gRPC service patterns
 │   ├── clean-architecture-patterns.md  # Clean architecture patterns
-│   ├── database-patterns.md    # Database operations
+│   ├── data-patterns.md        # Data layer, ORM, transactions, caching
+│   ├── error-patterns.md       # Error handling and error codes
+│   ├── validation-patterns.md  # Input validation with proto
+│   ├── tracing-patterns.md     # OpenTelemetry tracing and metrics
+│   ├── registry-patterns.md    # Service discovery and registration
+│   ├── event-patterns.md       # Event-driven architecture with Kafka
+│   ├── cqrs-patterns.md        # CQRS pattern implementation
 │   ├── middleware-patterns.md  # Middleware and interceptors
 │   └── kratos-cli-commands.md  # Kratos CLI reference
 ├── best-practices/             # Production recommendations
